@@ -1,0 +1,352 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* %tage of user's browser fontsize setting */
+  font-size: 62.5%;
+}
+
+body {
+  /* Set the default settings I am used to  */
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
+  line-height: 1;
+  font-size: 1.4rem;
+  /* font-weight: 400; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+}
+
+.heading-primary {
+  color: #888;
+}
+
+.expense-component {
+  /* background-color: green; */
+  height: 40rem;
+  width: 40rem;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.4rem;
+}
+
+/* =================================== */
+/* BALANCE SECTION */
+/* =================================== */
+.summary {
+  margin-top: 1.6rem;
+}
+
+.section-balance {
+  padding: 1.8rem 2.4rem;
+  max-width: 100%;
+  height: 8.6rem;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: hsl(25, 47%, 15%);
+}
+
+.balance--details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  color: hsl(27, 66%, 92%);
+}
+
+.balance--text {
+  color: hsl(33, 100%, 98%);
+}
+
+.balance-amount {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* style for the divider */
+.divider {
+  margin-top: 1.8rem;
+  height: 1px;
+  width: 100%;
+  background-color: hsla(30, 60%, 2%, 0.63);
+}
+
+/* =================================== */
+/* GRAPH SECTION */
+/* =================================== */
+
+.section-graph {
+  padding: 2.6rem 2.4rem;
+  height: 40rem;
+  background-color: #fff;
+
+  border-radius: 15px;
+}
+
+.graph {
+  /* background-color: green; */
+  margin-top: 3.2rem;
+  height: 15rem;
+  display: flex;
+  align-items: flex-end;
+
+  gap: 2.12rem;
+}
+
+.bar-chart--element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+
+  cursor: pointer;
+  /* position: relative; */
+}
+
+/* .mon::before {
+  content: "$23.67";
+  padding: 0.8rem 0.8rem;
+  background-color: hsl(25, 47%, 15%);
+} */
+
+.mon--bar {
+  height: 4.54rem;
+  width: 3.2rem;
+  background-color: #888;
+
+  border-radius: 5px;
+  position: relative;
+}
+
+.mon-hover-amount {
+  padding: 0.8rem 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+
+  font-size: 1.2rem;
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  position: absolute;
+  top: 52rem;
+
+  /* opacity: 0; */
+}
+
+.tue--bar {
+  height: 9.1rem;
+  width: 3.2rem;
+  background-color: #888;
+
+  border-radius: 5px;
+  position: relative;
+}
+
+.tue-hover-amount {
+  padding: 0.8rem 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+
+  font-size: 1.2rem;
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  position: absolute;
+  top: 47.5rem;
+
+  /* opacity: 0; */
+}
+
+.wed--bar {
+  height: 13.6rem;
+  width: 3.2rem;
+  background-color: #888;
+
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.wed-hover-amount {
+  padding: 0.8rem 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+
+  font-size: 1.2rem;
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  position: absolute;
+  top: 43.5rem;
+
+  /* opacity: 0; */
+}
+
+.thu--bar {
+  height: 8.1rem;
+  width: 3.2rem;
+  background-color: #888;
+
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.thu-hover-amount {
+  padding: 0.8rem 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+
+  font-size: 1.2rem;
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  position: absolute;
+  top: 48.7rem;
+
+  /* opacity: 0; */
+}
+
+.fri--bar {
+  height: 6.1rem;
+  width: 3.2rem;
+  background-color: #888;
+
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.fri-hover-amount {
+  padding: 0.8rem 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+
+  font-size: 1.2rem;
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  position: absolute;
+  top: 51rem;
+
+  /* opacity: 0; */
+}
+
+.sat--bar {
+  height: 11.3rem;
+  width: 3.2rem;
+  background-color: #888;
+
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.sat-hover-amount {
+  padding: 0.8rem 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+
+  font-size: 1.2rem;
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  position: absolute;
+  top: 45.5rem;
+
+  /* opacity: 0; */
+}
+
+.sun--bar {
+  height: 6.6rem;
+  width: 3.2rem;
+  background-color: #888;
+
+  border-radius: 5px;
+
+  position: relative;
+}
+
+.sun-hover-amount {
+  padding: 0.8rem 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+
+  font-size: 1.2rem;
+  color: hsl(27, 66%, 92%);
+  font-weight: 700;
+
+  border-radius: 5px;
+
+  position: absolute;
+  top: 50rem;
+
+  /* opacity: 0; */
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.name {
+  font-size: 1rem;
+  color: #888;
+}
+
+.current-day {
+  background-color: hsl(186, 34%, 60%);
+}
+
+/* =================================== */
+/* SUMMARY */
+/* =================================== */
+.summary {
+  margin-top: 1.6rem;
+}
+.summary--amount {
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.amount {
+  font-weight: 700;
+  font-size: 3.6rem;
+}
+.summary--percentage {
+  font-weight: 700;
+}
+
+.footer {
+  font-size: 1.2rem;
+}
+/* font size (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

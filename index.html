@@ -1,43 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  My balance
-  $921.48
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  Spending - Last 7 days
+    <title>Frontend Mentor | Expenses chart component</title>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main class="expense-component">
+      <section class="section-balance">
+        <div class="balance--details">
+          <p class="balance--text">My balance</p>
+          <p class="balance-amount">$921.48</p>
+        </div>
+        <img alt="logo" src="images/logo.svg" />
+      </section>
+      <section class="section-graph">
+        <p class="heading-secondary">Spending - Last 7 days</p>
+        <div class="graph">
+          <div class="mon bar-chart--element">
+            <div class="mon-hover-amount hidden">$26.90</div>
+            <div class="mon--bar"></div>
+            <p class="name">mon</p>
+          </div>
 
-  Total this month
-  $478.33
+          <div class="tue bar-chart--element">
+            <div class="tue-hover-amount hidden">$26.90</div>
+            <div class="tue--bar"></div>
+            <p class="name">tue</p>
+          </div>
 
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="wed bar-chart--element">
+            <div class="wed-hover-amount hidden">$26.90</div>
+
+            <div class="wed--bar current-day"></div>
+            <p class="name">wed</p>
+          </div>
+
+          <div class="thu bar-chart--element">
+            <div class="thu-hover-amount hidden">$26.90</div>
+
+            <div class="thu--bar"></div>
+            <p class="name">thu</p>
+          </div>
+
+          <div class="fri bar-chart--element">
+            <div class="fri-hover-amount hidden">$26.90</div>
+
+            <div class="fri--bar"></div>
+            <p class="name">fri</p>
+          </div>
+
+          <div class="sat bar-chart--element">
+            <div class="sat-hover-amount hidden">$26.90</div>
+            <div class="sat--bar"></div>
+            <p class="name">sat</p>
+          </div>
+
+          <div class="sun bar-chart--element">
+            <div class="sun-hover-amount hidden">$26.90</div>
+            <div class="sun--bar"></div>
+            <p class="name">sun</p>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="summary">
+          <p class="heading-primary">Total this month</p>
+          <div class="summary--amount">
+            <div class="amount">$478.33</div>
+            <div class="summary--aside">
+              <div class="summary--percentage">+2.4%</div>
+              <span class="heading-primary">from last month</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Louis Marie Atoluko Ayariga</a>.
+      </footer>
+    </main>
+    <!-- SCRIPTS -->
+    <script rel="script" src="js/script.js"></script>
+    <!-- displays site properly based on user's device -->
+  </body>
 </html>
