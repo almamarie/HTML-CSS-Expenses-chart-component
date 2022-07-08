@@ -29,12 +29,8 @@ let jsonData = [
     amount: 25.48,
   },
 ];
-const data = {};
 
-jsonData.map((ele) => {
-  data[ele.day] = ele.amount;
-});
-
+// This function returns the maximum amount in the list.
 const getMaxAmount = function () {
   let max = 0;
   jsonData.map((ele) => {
@@ -89,6 +85,13 @@ jsonData.forEach((data) => {
     hover.style.opacity = 0;
   });
 });
+
+// HIghlight the current day's color
+// extract the current day's first 3 letters and make them lower case
+const date = Date().toString();
+const concatDay = date.substring(0, 3).toLowerCase();
+document.querySelector(`.${concatDay}--bar`).style.backgroundColor =
+  "hsl(186, 34%, 60%)";
 
 // let wed = document.querySelector(".wed");
 // let wedHover = document.querySelector(".wed-hover-amount");

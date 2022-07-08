@@ -318,9 +318,11 @@ body {
   color: #888;
 }
 
-.current-day {
+/* This code was used to set the color of the current day
+before I useed javascript to do it. */
+/* .current-day {
   background-color: hsl(186, 34%, 60%);
-}
+} */
 
 /* =================================== */
 /* SUMMARY */
